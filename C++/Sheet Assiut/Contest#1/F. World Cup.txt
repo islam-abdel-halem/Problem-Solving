@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int D,S;
+    cin >> D >> S;
+    if (S >= 2 * D / 3){cout <<"Sunny Day";}
+    else if (S <= D / 3){cout <<"Rainy Day";}
+    else {cout <<"Cloudy Day";}
+    return 0;
+}

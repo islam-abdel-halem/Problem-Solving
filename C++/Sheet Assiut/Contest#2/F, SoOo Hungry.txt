@@ -1,0 +1,10 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main() {
+    long long x, y;
+    cin >> x >> y;
+    long long minutes = (x + y - 1) / y;
+    cout << minutes << endl;
+    return 0;
+}

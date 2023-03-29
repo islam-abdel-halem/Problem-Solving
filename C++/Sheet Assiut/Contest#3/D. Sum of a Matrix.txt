@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main() {
+    int R, C;
+    cin >> R >> C;
+    int A[R][C], B[R][C], Result[R][C];
+    for (int i = 0; i < R; i++) {
+        for (int j = 0; j < C; j++) {
+            cin >> A[i][j];
+        }
+    }
+    for (int i = 0; i < R; i++) {
+        for (int j = 0; j < C; j++) {
+            cin >> B[i][j];
+        }
+    }
+    for (int i = 0; i < R; i++) {
+        for (int j = 0; j < C; j++) {
+            Result[i][j] = A[i][j] + B[i][j];
+            cout << Result[i][j] << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}

@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+   int n1,n2,n3,n4,x;
+   long long mult;
+   cin>>n1>>n2>>n3>>n4;
+   n1%=100;
+   n2%=100;
+   n3%=100;
+   n4%=100;
+   mult=n1*n2*n3*n4%100;
+   x=mult;
+   if(x<10){
+    cout<<0<<x;
+   }else{
+   cout<<x;
+   }
+    return 0;
+}

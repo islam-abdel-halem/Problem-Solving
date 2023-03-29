@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+   int n1,n2,res;
+   char op,equ;
+   cin>>n1>>op>>n2>>equ>>res;
+   switch(op){
+   case '+':
+    if(n1+n2==res)cout<<"Yes"<<endl;
+    else cout<<n1+n2<<endl;
+    break;
+    case '-':
+     if(n1-n2==res)cout<<"Yes"<<endl;
+    else cout<<n1-n2<<endl;
+    break;
+    case '*':
+     if(n1*n2==res)cout<<"Yes"<<endl;
+    else cout<<n1*n2<<endl;
+    break;
+   }
+    return 0;
+}

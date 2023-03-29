@@ -1,0 +1,41 @@
+
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main() {
+    long long x, y, z;
+    char op, comp;
+    cin >> x >> op >> y >> comp >> z;
+    bool valid;
+    if (op == '+') {
+        if (comp == '<') {
+            valid = x + y < z;
+        } else if (comp == '=') {
+            valid = x + y == z;
+        } else {
+            valid = x + y > z;
+        }
+    } else if (op == '-') {
+        if (comp == '<') {
+            valid = x - y < z;
+        } else if (comp == '=') {
+            valid = x - y == z;
+        } else {
+            valid = x - y > z;
+        }
+    } else {
+        if (comp == '<') {
+            valid = x * y < z;
+        } else if (comp == '=') {
+            valid = x * y == z;
+        } else {
+            valid = x * y > z;
+        }
+    }
+    if (valid) {
+        cout << "YES" << endl;
+    } else {
+        cout << "NO" << endl;
+    }
+    return 0;
+}

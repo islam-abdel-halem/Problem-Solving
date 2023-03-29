@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main() {
+    int x, p;
+    cin >> x >> p;
+ 
+    double price = p * 100.0 / (100.0 - x);
+ 
+    cout << fixed << setprecision(2)<< price << endl;
+    return 0;
+}

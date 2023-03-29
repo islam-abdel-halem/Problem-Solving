@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int l, r, m;
+    cin >> l >> r >> m;
+
+    long long ans = 1;
+    for (int i = l; i <= r; i++) {
+        ans = (ans * i) % m;
+    }
+
+    cout << ans << endl;
+    return 0;
+}

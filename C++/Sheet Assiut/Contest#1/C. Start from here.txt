@@ -1,0 +1,10 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main() {
+    double R;
+    cin >> R;
+    double area = 4 * R * R;
+    cout << fixed << setprecision(6) << area << endl;
+    return 0;
+}
