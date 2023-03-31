@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
     int n, m, i, j;
-    cin >> n, m;
+    cin >> n >> m;
     int arr[n][m];
     for (i = 0; i < n; i++)
     {
@@ -23,7 +23,7 @@ int main()
     {
         for (j = 0; j < m; j++)
         {
-            cout << arr[i][j]<<' ';
+            cout << arr[i][j] << ' ';
         }
         cout << endl;
     }
